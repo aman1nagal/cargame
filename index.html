@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .startScreen{
+            position:absolute;
+            background-color: #22dd22;
+            left: 45%;
+            right: 50%;
+            transform: translate(-50%,-50%);
+            color: rgb(249, 252, 255);
+            z-index: 1;
+            text-align: center;
+            border: 2px solid rgb(223, 28, 28);
+            padding: 10px;
+            margin: auto;
+            margin-top: 300px;
+            width: 50%;
+            cursor: pointer;
+            letter-spacing: 4;
+            font-size: 10px;
+            word-spacing: 30px;
+            text-transform: uppercase;
+            box-shadow: 5px 5px 5px rgb(243, 72, 72);
+        }
+        .hide{
+            display: none;
+        }
+        .startScreen{
+            margin-left: auto;
+            background-color: rgb(142, 166, 237);
+            color: aliceblue;
+        }
+        .gameArea{
+            background-image: url(Bgimg.webp);
+
+            width: 400px;
+            height: 100vh;
+            background: rgb(83, 85, 83);
+            margin-left: 450px ;
+            /* margin: auto; */
+            position: relative;
+            border-left: 5px dashed rgb(14, 240, 93);
+            border-right: 5px dashed rgb(41, 209, 136);
+        }
+        .enemy{
+            position:absolute;
+            bottom: 120px; 
+            width: 60px;
+            height: 90px; 
+            background: rgb(203, 19, 19);
+            background-image: url("CARF.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .lines{
+            width: 25px;
+            height: 100px;
+            background: whitesmoke;
+            position: absolute;
+            margin-left: 185px;
+        }
+        .car{
+            position:absolute;
+            background: cyan;
+            bottom: 120px; 
+            width: 60px;
+            height: 90px; 
+            
+            background-image: url("CARF.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }.score{
+            position:absolute;
+            top: 70px;
+            left: 7px;
+            background: yellow;
+            width :400px;
+            line-height: 70px;
+            text-align: center;
+            color: aqua;
+            font-size:1.3rem;
+            font-family: fantasy;
+            box-shadow: 5px 5px 15px #19ee19;
+        }       
+        .carGame{
+            width: 100%;
+            height: 100vh;
+            background-image: url('bgimg1.png');
+        }                              
+    </style>
+</head>
+<body>
+        <div class="carGame">
+        <div class='score hide'> Score :100 </div>
+        <div class='game'>
+            <div class='startScreen'><h1>Click Here to start game If you hit any other car you will out</h1></div>
+            <div class='gameArea'>
+
+            </div> 
+        </div>
+    </div>
+
+        <script src="./script.js"></script>
+</body>
+</html>
